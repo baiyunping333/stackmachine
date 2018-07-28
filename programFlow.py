@@ -36,7 +36,7 @@ def gt(stack):
 def jfalse(stack, instruction):
     a = stack.pop()
     if not a:
-        return stack
+        return stack, None
     func = instruction[1]
     return (stack, func)
 
@@ -49,7 +49,7 @@ def jtrue(stack, instruction):
     if a:
         func = instruction[1]
         return (stack, func)
-    return stack
+    return stack, None
 
 def le(stack):
     a = stack.pop()

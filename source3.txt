@@ -1,0 +1,35 @@
+start
+
+data 20 xxx
+data 0 yyy
+
+data 1 a
+data 1 b
+data 0 zz
+
+loop
+push xxx 
+push yyy 
+le
+jtrue quit
+
+push a 
+push b 
+add
+dup
+
+push yyy 
+push 1
+add
+pop yyy 
+pop zz
+
+push b
+pop a
+pop b
+
+jmp loop
+
+quit
+stop
+end start 

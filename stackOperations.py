@@ -1,5 +1,5 @@
 def drop(stack):
-    stack.pop()
+    stak.pop()
     return stack
 
 def dup(stack):
@@ -28,7 +28,7 @@ def push(stack, instruction):
 
 def pusha(stack):
     pass
-    
+
 def rot(stack):
     a = stack.pop()
     b = stack.pop()
